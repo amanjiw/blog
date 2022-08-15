@@ -2,10 +2,10 @@ import React from "react";
 import PostContent from "../../components/posts/posts-detail/PostContent";
 import { getPostData, getPostsFiles } from "../../lib/posts-util";
 
-function SingleDetailPage() {
+function SingleDetailPage({ post }) {
   return (
     <div>
-      <PostContent />
+      <PostContent post={post} />
     </div>
   );
 }
