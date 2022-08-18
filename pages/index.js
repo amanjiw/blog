@@ -8,6 +8,7 @@ function HomePage({ posts }) {
     <div>
       <Hero />
       <FeaturedPosts posts={posts} />
+      
     </div>
   );
 }
