@@ -11,7 +11,6 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <Component {...pageProps} />
       </Layout>
-      <div id="notifications"></div>
     </>
   );
 }
