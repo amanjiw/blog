@@ -1,12 +1,17 @@
 import React from "react";
+import Head from "next/head";
 import PostContent from "../../components/posts/posts-detail/PostContent";
 import { getPostData, getPostsFiles } from "../../lib/posts-util";
 
 function SingleDetailPage({ post }) {
   return (
-    <div>
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+      </Head>
       <PostContent post={post} />
-    </div>
+    </>
   );
 }
 
